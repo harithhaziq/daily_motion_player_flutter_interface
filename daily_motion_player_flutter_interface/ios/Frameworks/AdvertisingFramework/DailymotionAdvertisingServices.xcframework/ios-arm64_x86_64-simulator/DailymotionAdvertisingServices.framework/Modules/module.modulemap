@@ -1,4 +1,0 @@
-framework module DailymotionAdvertisingServices {
-  header "DailymotionAdvertisingServices-Swift.h"
-  requires objc
-}

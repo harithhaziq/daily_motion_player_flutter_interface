@@ -1,4 +1,0 @@
-framework module DailymotionChromecast {
-  header "DailymotionChromecast-Swift.h"
-  requires objc
-}
