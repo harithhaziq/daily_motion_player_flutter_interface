@@ -183,7 +183,7 @@ class DailymotionPlayerNativeView: NSObject, FlutterPlatformView{
             loop: true,
             allowIDFA: false,
             allowPIP: false,
-            defaultFullscreenOrientation: .landscapeRight
+            defaultFullscreenOrientation: .portrait
 
         )
 
