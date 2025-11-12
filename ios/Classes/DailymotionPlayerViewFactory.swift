@@ -16,13 +16,19 @@ class DailymotionPlayerViewFactory: NSObject, FlutterPlatformViewFactory {
         viewIdentifier viewId: Int64,
         arguments args: Any?
     ) -> FlutterPlatformView {
+        var channelName = "dailymotion-player-channel"
+        if let argsDict = args as? [String: Any],
+               let customChannelName = argsDict["channelName"] as? String {
+                channelName = customChannelName
+            }
+
         let nativeView = DailymotionPlayerNativeView(
             frame: frame,
             viewIdentifier: viewId,
             arguments: args,
             binaryMessenger: messenger)
         // Register method channel
-        let channel = FlutterMethodChannel(name: "dailymotion-player-channel", binaryMessenger: messenger)
+        let channel = FlutterMethodChannel(name: channelName, binaryMessenger: messenger)
         channel.setMethodCallHandler { [weak nativeView] (call, result) in
             if call.method == "play" {
                 nativeView?.play()

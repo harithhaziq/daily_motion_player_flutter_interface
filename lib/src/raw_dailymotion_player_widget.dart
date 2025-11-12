@@ -52,6 +52,7 @@ class RawDailymotionPlayerWidget extends StatelessWidget {
         creationParams: {
           "videoId": controller.videoId,
           "playerId": controller.playerId,
+          'channelName': controller.channelName,
         },
         creationParamsCodec: const StandardMessageCodec(),
       ),
