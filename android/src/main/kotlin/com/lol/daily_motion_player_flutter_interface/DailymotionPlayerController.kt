@@ -127,15 +127,36 @@ class DailymotionPlayerController(
             },
             playerListener = object : PlayerListener {
                 override fun onFullscreenRequested(playerDialogFragment: DialogFragment) {
-                    playerDialogFragment.show(
-                        (context as androidx.fragment.app.FragmentActivity).supportFragmentManager,
-                        "dmPlayerFullscreenFragment"
-                    )
+                    try {
+                        // Find the FragmentActivity from the context hierarchy
+                        val activity = getActivity(context)
+                        if (activity is androidx.fragment.app.FragmentActivity) {
+                            playerDialogFragment.show(
+                                activity.supportFragmentManager,
+                                "dmPlayerFullscreenFragment"
+                            )
+                        } else {
+                            Log.e(logTag, "Context is not a FragmentActivity")
+                        }
+                    } catch (e: Exception) {
+                        Log.e(logTag, "Error showing fullscreen: ${e.message}")
+                    }
                 }
 
 
             }
         )
+    }
+
+    private fun getActivity(context: Context?): android.app.Activity? {
+        var ctx = context
+        while (ctx is android.content.ContextWrapper) {
+            if (ctx is android.app.Activity) {
+                return ctx
+            }
+            ctx = ctx.baseContext
+        }
+        return null
     }
 
     fun play() = playerView.play()
