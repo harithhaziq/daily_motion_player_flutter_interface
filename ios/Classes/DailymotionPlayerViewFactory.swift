@@ -137,6 +137,25 @@ class DailymotionPlayerViewFactory: NSObject, FlutterPlatformViewFactory {
             } else if call.method == "setPlaybackSpeed200" {
                 nativeView?.setPlaybackSpeed200()
                 result(nil)
+            } else if call.method == "updatePlayerParams" {
+                // Handle updatePlayerParams method
+                if let args = call.arguments as? [String: Any] {
+                    let mute = args["mute"] as? Bool ?? false
+                    let volume = args["volume"] as? Int ?? 100
+
+                    if mute {
+                        nativeView?.setMute()
+                    } else {
+                        nativeView?.setUnMute()
+                    }
+                    // Note: Volume control and enableControls would need additional implementation
+                    // in DailymotionPlayerNativeView if the SDK supports them
+                }
+                result(nil)
+            } else if call.method == "isReady" {
+                // Check if player is ready
+                let isReady = nativeView?.isPlayerReady() ?? false
+                result(isReady)
             } else {
                 result(FlutterMethodNotImplemented)
             }
@@ -157,6 +176,7 @@ class DailymotionPlayerNativeView: NSObject, FlutterPlatformView{
     var _videoId: String
     var _playerId: String
     let dailymotionPlayerController: DailymotionPlayerController
+    private var methodChannel: FlutterMethodChannel?
 
     init(
         frame: CGRect,
@@ -180,7 +200,7 @@ class DailymotionPlayerNativeView: NSObject, FlutterPlatformView{
         let defaultParameters = DMPlayerParameters(
             scaleMode: .fit,
             mute: false,
-            loop: true,
+            loop: false,
             allowIDFA: false,
             allowPIP: false,
             defaultFullscreenOrientation: .portrait
@@ -218,10 +238,12 @@ class DailymotionPlayerNativeView: NSObject, FlutterPlatformView{
     }
 
     func play() {
+        print("📱 play() called - playerView is \(dailymotionPlayerController.playerView != nil ? "ready" : "nil")")
         dailymotionPlayerController.play()
     }
 
     func pause() {
+        print("📱 pause() called - playerView is \(dailymotionPlayerController.playerView != nil ? "ready" : "nil")")
         dailymotionPlayerController.pause()
     }
 
@@ -311,6 +333,12 @@ class DailymotionPlayerNativeView: NSObject, FlutterPlatformView{
 
     func setPlaybackSpeed200() {
         dailymotionPlayerController.playerView?.setPlaybackSpeed(speed: 2)
+    }
+
+    func isPlayerReady() -> Bool {
+        let isReady = dailymotionPlayerController.playerView != nil
+        print("isPlayerReady check: \(isReady)")
+        return isReady
     }
 
 

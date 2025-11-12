@@ -21,6 +21,8 @@ class DailymotionPlayerController: UIViewController, ObservableObject, DMVideoDe
     var parameters: DMPlayerParameters?
 
     private var playerWrapper: UIView?
+    var onPlayerReady: (() -> Void)?
+    private var shouldPlayWhenReady = false
 
 
     // Initialize the class with playerId and videoId
@@ -93,10 +95,19 @@ class DailymotionPlayerController: UIViewController, ObservableObject, DMVideoDe
     }
 
     func play() {
-        self.playerView?.play()
+        if self.playerView != nil {
+            print("▶️ Playing immediately - player is ready")
+            self.playerView?.play()
+        } else {
+            print("⏳ Player not ready yet, will play when ready")
+            shouldPlayWhenReady = true
+        }
     }
 
     func pause() {
+        print("⏸ Pause called")
+        // Cancel deferred play if it was requested
+        shouldPlayWhenReady = false
         self.playerView?.pause()
     }
 
@@ -150,22 +161,97 @@ extension DailymotionPlayerController: DMPlayerDelegate {
     }
 
     func playerDidRequestFullscreen(_ player: DMPlayerView) {
-        // Move the player in fullscreen State
-        // Call notifyFullscreenChanged() the player will update his state
-        player.notifyFullscreenChanged()
+        print("🎬 Fullscreen requested")
+
+        // Find the presenting view controller
+        guard let presentingVC = playerWillPresentFullscreenViewController(player) else {
+            print("⚠️ No presenting view controller found")
+            return
+        }
+
+        // Create a fullscreen view controller
+        let fullscreenVC = UIViewController()
+        fullscreenVC.view.backgroundColor = .black
+        fullscreenVC.modalPresentationStyle = .fullScreen
+
+        // Remove player from current wrapper
+        player.removeFromSuperview()
+
+        // Add player to fullscreen view controller
+        fullscreenVC.view.addSubview(player)
+        player.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            player.topAnchor.constraint(equalTo: fullscreenVC.view.topAnchor),
+            player.bottomAnchor.constraint(equalTo: fullscreenVC.view.bottomAnchor),
+            player.leadingAnchor.constraint(equalTo: fullscreenVC.view.leadingAnchor),
+            player.trailingAnchor.constraint(equalTo: fullscreenVC.view.trailingAnchor)
+        ])
+
+        // Present fullscreen
+        presentingVC.present(fullscreenVC, animated: true) {
+            // Notify the player that fullscreen is now active
+            player.notifyFullscreenChanged()
+        }
     }
 
     func playerDidExitFullScreen(_ player: DMPlayerView) {
-        // Move the player in initial State
-        // Call notifyFullscreenChanged() the player will update his state
-        player.notifyFullscreenChanged()
+        print("🎬 Exit fullscreen")
+
+        // Dismiss the fullscreen view controller
+        if let presentedVC = player.window?.rootViewController?.presentedViewController {
+            // Remove player from fullscreen view controller
+            player.removeFromSuperview()
+
+            presentedVC.dismiss(animated: true) {
+                // Re-add player to original wrapper
+                self.playerWrapper?.addSubview(player)
+                player.translatesAutoresizingMaskIntoConstraints = false
+                NSLayoutConstraint.activate([
+                    player.topAnchor.constraint(equalTo: self.playerWrapper!.topAnchor),
+                    player.bottomAnchor.constraint(equalTo: self.playerWrapper!.bottomAnchor),
+                    player.leadingAnchor.constraint(equalTo: self.playerWrapper!.leadingAnchor),
+                    player.trailingAnchor.constraint(equalTo: self.playerWrapper!.trailingAnchor)
+                ])
+
+                // Notify the player that fullscreen is now inactive
+                player.notifyFullscreenChanged()
+            }
+        }
     }
 
     func playerWillPresentFullscreenViewController(_ player: DMPlayerView) -> UIViewController? {
+        // Find the root view controller (FlutterViewController) to present fullscreen
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+           let window = windowScene.windows.first,
+           let rootViewController = window.rootViewController {
+            return rootViewController
+        }
+        // Fallback: traverse up the responder chain to find FlutterViewController
+        var responder: UIResponder? = self._parent
+        while responder != nil {
+            if let viewController = responder as? UIViewController {
+                // Return the top-most view controller in hierarchy
+                var topController = viewController
+                while let presented = topController.presentedViewController {
+                    topController = presented
+                }
+                return topController
+            }
+            responder = responder?.next
+        }
         return self
     }
 
     func playerWillPresentAdInParentViewController(_ player: DMPlayerView) -> UIViewController {
+        // Find the FlutterViewController in the responder chain
+        var responder: UIResponder? = self._parent
+        while responder != nil {
+            if let flutterVC = responder as? UIViewController {
+                return flutterVC
+            }
+            responder = responder?.next
+        }
+        // Fallback to self if no FlutterViewController found
         return self
     }
 
@@ -178,7 +264,17 @@ extension DailymotionPlayerController: DMPlayerDelegate {
     }
 
     func playerDidCriticalPathReady(_ player: DMPlayerView) {
-        print( "--playerDidCriticalPathReady")
+        print("✅ playerDidCriticalPathReady - Player is now ready!")
+
+        // Notify that player is ready
+        onPlayerReady?()
+
+        // If play was requested before player was ready, play now
+        if shouldPlayWhenReady {
+            print("▶️ Auto-playing deferred play request")
+            shouldPlayWhenReady = false
+            player.play()
+        }
     }
 
     func player(_ player: DMPlayerView, didReceivePlaybackPermission playbackPermission: PlayerPlaybackPermission) {
