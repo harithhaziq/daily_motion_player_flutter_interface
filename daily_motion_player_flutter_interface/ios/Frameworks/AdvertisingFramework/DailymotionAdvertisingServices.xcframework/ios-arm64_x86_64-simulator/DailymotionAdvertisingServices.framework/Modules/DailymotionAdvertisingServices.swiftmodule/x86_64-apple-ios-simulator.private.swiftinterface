@@ -1,0 +1,56 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DailymotionAdvertisingServices
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+import AVKit
+import AudioToolbox
+import Combine
+import DeveloperToolsSupport
+import Foundation
+import GoogleInteractiveMediaAds
+import OMSDK_Dailymotion3
+import Swift
+import SwiftUI
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os.log
+import os
+@_hasMissingDesignatedInitializers @objc open class IMAAdManager : ObjectiveC.NSObject {
+  @objc public static let imaVersion: Swift.String
+  @objc public func imaAdRequested(_ imaAdDetails: [Swift.String : Any], muted: Swift.Bool)
+  @objc public func isAdCurrentlyLoading() -> Swift.Bool
+  @objc public func imaAdStop()
+  @objc public func toggleFullscreen()
+  @objc public func setFullscreenViewController(viewController: UIKit.UIViewController?)
+  @objc public func play()
+  @objc public func pause()
+  @objc public func togglePlay()
+  @objc public func toggleMute()
+  @objc deinit
+}
+@objc open class DMAdvertisingServices : ObjectiveC.NSObject {
+  public static let sdkVersion: Swift.String
+  @objc final public let imaManager: DailymotionAdvertisingServices.IMAAdManager
+  @objc final public let omidManager: DailymotionAdvertisingServices.OMSDKManager
+  @objc public init(webView: WebKit.WKWebView, imaContainer: UIKit.UIView, imaDelegate: any DailymotionAdvertisingServices.IMADelegate, logLevel: Foundation.NSNumber, enableAdsControls: Swift.Bool)
+  @objc public func setInternalFlag(_ flag: Swift.String)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc open class OMSDKManager : ObjectiveC.NSObject {
+  @objc public static let omidPartnerName: Swift.String
+  @objc public static let omidPartnerVersion: Swift.String
+  @objc public static let omSDKVersion: Swift.String
+  @objc public func activateOMID() -> Swift.Bool
+  @objc public func handleOmsdkSignals(_ event: Swift.String)
+  @objc deinit
+}
+@objc public protocol IMADelegate {
+  @objc func imaEvent(event: Swift.String)
+  @objc func imaLocalEvent(event: Swift.String)
+  @objc func imaMute(mute: Swift.Bool)
+  @objc func viewControllerForAds() -> UIKit.UIViewController?
+  @objc func toggleFullscreen()
+}

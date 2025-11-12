@@ -1,0 +1,2572 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "DailymotionChromecast",
+    "printedName": "DailymotionChromecast",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "DailymotionChromecast",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleCast",
+        "printedName": "GoogleCast",
+        "declKind": "Import",
+        "moduleName": "DailymotionChromecast"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "DailymotionChromecast"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DailymotionChromecast",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "DailymotionChromecast"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DailymotionChromecast",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DailymotionChromecast",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DailymotionChromecast"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DailymotionChromecast",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DailymotionChromecast"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DailymotionChromecast",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DailymotionChromecast"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DailymotionChromecast",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DailymotionChromecast"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "DailymotionChromecast"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ChromecastError",
+        "printedName": "ChromecastError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "underlyingCastError",
+            "printedName": "underlyingCastError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DailymotionChromecast.ChromecastError.Type) -> (any Swift.Error) -> DailymotionChromecast.ChromecastError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(any Swift.Error) -> DailymotionChromecast.ChromecastError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChromecastError",
+                        "printedName": "DailymotionChromecast.ChromecastError",
+                        "usr": "s:21DailymotionChromecast0B5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(error: any Swift.Error)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DailymotionChromecast.ChromecastError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChromecastError",
+                        "printedName": "DailymotionChromecast.ChromecastError",
+                        "usr": "s:21DailymotionChromecast0B5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21DailymotionChromecast0B5ErrorO014underlyingCastC0yACs0C0_p_tcACmF",
+            "mangledName": "$s21DailymotionChromecast0B5ErrorO014underlyingCastC0yACs0C0_p_tcACmF",
+            "moduleName": "DailymotionChromecast"
+          },
+          {
+            "kind": "Var",
+            "name": "castSessionMissing",
+            "printedName": "castSessionMissing",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DailymotionChromecast.ChromecastError.Type) -> DailymotionChromecast.ChromecastError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChromecastError",
+                    "printedName": "DailymotionChromecast.ChromecastError",
+                    "usr": "s:21DailymotionChromecast0B5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DailymotionChromecast.ChromecastError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChromecastError",
+                        "printedName": "DailymotionChromecast.ChromecastError",
+                        "usr": "s:21DailymotionChromecast0B5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21DailymotionChromecast0B5ErrorO18castSessionMissingyA2CmF",
+            "mangledName": "$s21DailymotionChromecast0B5ErrorO18castSessionMissingyA2CmF",
+            "moduleName": "DailymotionChromecast"
+          },
+          {
+            "kind": "Var",
+            "name": "remoteMediaClientMissing",
+            "printedName": "remoteMediaClientMissing",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DailymotionChromecast.ChromecastError.Type) -> DailymotionChromecast.ChromecastError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChromecastError",
+                    "printedName": "DailymotionChromecast.ChromecastError",
+                    "usr": "s:21DailymotionChromecast0B5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DailymotionChromecast.ChromecastError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChromecastError",
+                        "printedName": "DailymotionChromecast.ChromecastError",
+                        "usr": "s:21DailymotionChromecast0B5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21DailymotionChromecast0B5ErrorO24remoteMediaClientMissingyA2CmF",
+            "mangledName": "$s21DailymotionChromecast0B5ErrorO24remoteMediaClientMissingyA2CmF",
+            "moduleName": "DailymotionChromecast"
+          },
+          {
+            "kind": "Var",
+            "name": "mediaStatusMissing",
+            "printedName": "mediaStatusMissing",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DailymotionChromecast.ChromecastError.Type) -> DailymotionChromecast.ChromecastError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChromecastError",
+                    "printedName": "DailymotionChromecast.ChromecastError",
+                    "usr": "s:21DailymotionChromecast0B5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DailymotionChromecast.ChromecastError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChromecastError",
+                        "printedName": "DailymotionChromecast.ChromecastError",
+                        "usr": "s:21DailymotionChromecast0B5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21DailymotionChromecast0B5ErrorO18mediaStatusMissingyA2CmF",
+            "mangledName": "$s21DailymotionChromecast0B5ErrorO18mediaStatusMissingyA2CmF",
+            "moduleName": "DailymotionChromecast"
+          },
+          {
+            "kind": "Var",
+            "name": "remoteMetadataMissing",
+            "printedName": "remoteMetadataMissing",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DailymotionChromecast.ChromecastError.Type) -> DailymotionChromecast.ChromecastError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChromecastError",
+                    "printedName": "DailymotionChromecast.ChromecastError",
+                    "usr": "s:21DailymotionChromecast0B5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DailymotionChromecast.ChromecastError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChromecastError",
+                        "printedName": "DailymotionChromecast.ChromecastError",
+                        "usr": "s:21DailymotionChromecast0B5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21DailymotionChromecast0B5ErrorO21remoteMetadataMissingyA2CmF",
+            "mangledName": "$s21DailymotionChromecast0B5ErrorO21remoteMetadataMissingyA2CmF",
+            "moduleName": "DailymotionChromecast"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:21DailymotionChromecast0B5ErrorO",
+        "mangledName": "$s21DailymotionChromecast0B5ErrorO",
+        "moduleName": "DailymotionChromecast",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DailymotionChromecastDelegate",
+        "printedName": "DailymotionChromecastDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "castStarted",
+            "printedName": "castStarted(playable:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DailymotionChromecast.Playable?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Playable",
+                    "printedName": "DailymotionChromecast.Playable",
+                    "usr": "s:21DailymotionChromecast8PlayableV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21DailymotionChromecast0aB8DelegateP11castStarted8playableyAA8PlayableVSg_tF",
+            "mangledName": "$s21DailymotionChromecast0aB8DelegateP11castStarted8playableyAA8PlayableVSg_tF",
+            "moduleName": "DailymotionChromecast",
+            "genericSig": "<τ_0_0 where τ_0_0 : DailymotionChromecast.DailymotionChromecastDelegate>",
+            "sugared_genericSig": "<Self where Self : DailymotionChromecast.DailymotionChromecastDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "castStopped",
+            "printedName": "castStopped(position:playable:suspended:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DailymotionChromecast.Playable?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Playable",
+                    "printedName": "DailymotionChromecast.Playable",
+                    "usr": "s:21DailymotionChromecast8PlayableV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DailymotionChromecast.ChromecastError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChromecastError",
+                    "printedName": "DailymotionChromecast.ChromecastError",
+                    "usr": "s:21DailymotionChromecast0B5ErrorO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21DailymotionChromecast0aB8DelegateP11castStopped8position8playable9suspended5errorySd_AA8PlayableVSgSbAA0B5ErrorOSgtF",
+            "mangledName": "$s21DailymotionChromecast0aB8DelegateP11castStopped8position8playable9suspended5errorySd_AA8PlayableVSgSbAA0B5ErrorOSgtF",
+            "moduleName": "DailymotionChromecast",
+            "genericSig": "<τ_0_0 where τ_0_0 : DailymotionChromecast.DailymotionChromecastDelegate>",
+            "sugared_genericSig": "<Self where Self : DailymotionChromecast.DailymotionChromecastDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:21DailymotionChromecast0aB8DelegateP",
+        "mangledName": "$s21DailymotionChromecast0aB8DelegateP",
+        "moduleName": "DailymotionChromecast",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DMChromecast",
+        "printedName": "DMChromecast",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sdkVersion",
+            "printedName": "sdkVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21DailymotionChromecast12DMChromecastC10sdkVersionSSvpZ",
+            "mangledName": "$s21DailymotionChromecast12DMChromecastC10sdkVersionSSvpZ",
+            "moduleName": "DailymotionChromecast",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21DailymotionChromecast12DMChromecastC10sdkVersionSSvgZ",
+                "mangledName": "$s21DailymotionChromecast12DMChromecastC10sdkVersionSSvgZ",
+                "moduleName": "DailymotionChromecast",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any DailymotionChromecast.DailymotionChromecastDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21DailymotionChromecast12DMChromecastC8delegateAA0aB8Delegate_pSgvp",
+            "mangledName": "$s21DailymotionChromecast12DMChromecastC8delegateAA0aB8Delegate_pSgvp",
+            "moduleName": "DailymotionChromecast",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any DailymotionChromecast.DailymotionChromecastDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DailymotionChromecastDelegate",
+                        "printedName": "any DailymotionChromecast.DailymotionChromecastDelegate",
+                        "usr": "s:21DailymotionChromecast0aB8DelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21DailymotionChromecast12DMChromecastC8delegateAA0aB8Delegate_pSgvg",
+                "mangledName": "$s21DailymotionChromecast12DMChromecastC8delegateAA0aB8Delegate_pSgvg",
+                "moduleName": "DailymotionChromecast",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any DailymotionChromecast.DailymotionChromecastDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DailymotionChromecastDelegate",
+                        "printedName": "any DailymotionChromecast.DailymotionChromecastDelegate",
+                        "usr": "s:21DailymotionChromecast0aB8DelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21DailymotionChromecast12DMChromecastC8delegateAA0aB8Delegate_pSgvs",
+                "mangledName": "$s21DailymotionChromecast12DMChromecastC8delegateAA0aB8Delegate_pSgvs",
+                "moduleName": "DailymotionChromecast",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21DailymotionChromecast12DMChromecastC8delegateAA0aB8Delegate_pSgvM",
+                "mangledName": "$s21DailymotionChromecast12DMChromecastC8delegateAA0aB8Delegate_pSgvM",
+                "moduleName": "DailymotionChromecast",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isCasting",
+            "printedName": "isCasting",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21DailymotionChromecast12DMChromecastC9isCastingSbvp",
+            "mangledName": "$s21DailymotionChromecast12DMChromecastC9isCastingSbvp",
+            "moduleName": "DailymotionChromecast",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21DailymotionChromecast12DMChromecastC9isCastingSbvg",
+                "mangledName": "$s21DailymotionChromecast12DMChromecastC9isCastingSbvg",
+                "moduleName": "DailymotionChromecast",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21DailymotionChromecast12DMChromecastC9isCastingSbvs",
+                "mangledName": "$s21DailymotionChromecast12DMChromecastC9isCastingSbvs",
+                "moduleName": "DailymotionChromecast",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21DailymotionChromecast12DMChromecastC9isCastingSbvM",
+                "mangledName": "$s21DailymotionChromecast12DMChromecastC9isCastingSbvM",
+                "moduleName": "DailymotionChromecast",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "logLevels",
+            "printedName": "logLevels",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LogLevel",
+                "printedName": "DailymotionChromecast.LogLevel",
+                "usr": "s:21DailymotionChromecast8LogLevelV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21DailymotionChromecast12DMChromecastC9logLevelsAA8LogLevelVvpZ",
+            "mangledName": "$s21DailymotionChromecast12DMChromecastC9logLevelsAA8LogLevelVvpZ",
+            "moduleName": "DailymotionChromecast",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "DailymotionChromecast.LogLevel",
+                    "usr": "s:21DailymotionChromecast8LogLevelV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21DailymotionChromecast12DMChromecastC9logLevelsAA8LogLevelVvgZ",
+                "mangledName": "$s21DailymotionChromecast12DMChromecastC9logLevelsAA8LogLevelVvgZ",
+                "moduleName": "DailymotionChromecast",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "DailymotionChromecast.LogLevel",
+                    "usr": "s:21DailymotionChromecast8LogLevelV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21DailymotionChromecast12DMChromecastC9logLevelsAA8LogLevelVvsZ",
+                "mangledName": "$s21DailymotionChromecast12DMChromecastC9logLevelsAA8LogLevelVvsZ",
+                "moduleName": "DailymotionChromecast",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21DailymotionChromecast12DMChromecastC9logLevelsAA8LogLevelVvMZ",
+                "mangledName": "$s21DailymotionChromecast12DMChromecastC9logLevelsAA8LogLevelVvMZ",
+                "moduleName": "DailymotionChromecast",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(playable:containerView:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DMChromecast",
+                "printedName": "DailymotionChromecast.DMChromecast",
+                "usr": "s:21DailymotionChromecast12DMChromecastC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Playable",
+                "printedName": "DailymotionChromecast.Playable",
+                "usr": "s:21DailymotionChromecast8PlayableV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any DailymotionChromecast.DailymotionChromecastDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DailymotionChromecastDelegate",
+                    "printedName": "any DailymotionChromecast.DailymotionChromecastDelegate",
+                    "usr": "s:21DailymotionChromecast0aB8DelegateP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21DailymotionChromecast12DMChromecastC8playable13containerView8delegateAcA8PlayableV_So6UIViewCAA0aB8Delegate_pSgtcfc",
+            "mangledName": "$s21DailymotionChromecast12DMChromecastC8playable13containerView8delegateAcA8PlayableV_So6UIViewCAA0aB8Delegate_pSgtcfc",
+            "moduleName": "DailymotionChromecast",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "startChromecast",
+            "printedName": "startChromecast()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21DailymotionChromecast12DMChromecastC05startB0yyFZ",
+            "mangledName": "$s21DailymotionChromecast12DMChromecastC05startB0yyFZ",
+            "moduleName": "DailymotionChromecast",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updatePlayable",
+            "printedName": "updatePlayable(playable:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Playable",
+                "printedName": "DailymotionChromecast.Playable",
+                "usr": "s:21DailymotionChromecast8PlayableV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21DailymotionChromecast12DMChromecastC14updatePlayable8playableyAA0E0V_tF",
+            "mangledName": "$s21DailymotionChromecast12DMChromecastC14updatePlayable8playableyAA0E0V_tF",
+            "moduleName": "DailymotionChromecast",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updatePlayablePosition",
+            "printedName": "updatePlayablePosition(position:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21DailymotionChromecast12DMChromecastC22updatePlayablePosition8positionySd_tF",
+            "mangledName": "$s21DailymotionChromecast12DMChromecastC22updatePlayablePosition8positionySd_tF",
+            "moduleName": "DailymotionChromecast",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setup",
+            "printedName": "setup()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21DailymotionChromecast12DMChromecastC5setupyyF",
+            "mangledName": "$s21DailymotionChromecast12DMChromecastC5setupyyF",
+            "moduleName": "DailymotionChromecast",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:21DailymotionChromecast12DMChromecastC",
+        "mangledName": "$s21DailymotionChromecast12DMChromecastC",
+        "moduleName": "DailymotionChromecast",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DailymotionChromecast",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Playable",
+        "printedName": "Playable",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Playable",
+                "printedName": "DailymotionChromecast.Playable",
+                "usr": "s:21DailymotionChromecast8PlayableV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Playable",
+                "printedName": "DailymotionChromecast.Playable",
+                "usr": "s:21DailymotionChromecast8PlayableV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21DailymotionChromecast8PlayableV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s21DailymotionChromecast8PlayableV2eeoiySbAC_ACtFZ",
+            "moduleName": "DailymotionChromecast",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "chromecastUrl",
+            "printedName": "chromecastUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21DailymotionChromecast8PlayableV13chromecastUrlSSvp",
+            "mangledName": "$s21DailymotionChromecast8PlayableV13chromecastUrlSSvp",
+            "moduleName": "DailymotionChromecast",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21DailymotionChromecast8PlayableV13chromecastUrlSSvg",
+                "mangledName": "$s21DailymotionChromecast8PlayableV13chromecastUrlSSvg",
+                "moduleName": "DailymotionChromecast",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isLive",
+            "printedName": "isLive",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21DailymotionChromecast8PlayableV6isLiveSbvp",
+            "mangledName": "$s21DailymotionChromecast8PlayableV6isLiveSbvp",
+            "moduleName": "DailymotionChromecast",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21DailymotionChromecast8PlayableV6isLiveSbvg",
+                "mangledName": "$s21DailymotionChromecast8PlayableV6isLiveSbvg",
+                "moduleName": "DailymotionChromecast",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isVideo",
+            "printedName": "isVideo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21DailymotionChromecast8PlayableV7isVideoSbvp",
+            "mangledName": "$s21DailymotionChromecast8PlayableV7isVideoSbvp",
+            "moduleName": "DailymotionChromecast",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21DailymotionChromecast8PlayableV7isVideoSbvg",
+                "mangledName": "$s21DailymotionChromecast8PlayableV7isVideoSbvg",
+                "moduleName": "DailymotionChromecast",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "duration",
+            "printedName": "duration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21DailymotionChromecast8PlayableV8durationSivp",
+            "mangledName": "$s21DailymotionChromecast8PlayableV8durationSivp",
+            "moduleName": "DailymotionChromecast",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21DailymotionChromecast8PlayableV8durationSivg",
+                "mangledName": "$s21DailymotionChromecast8PlayableV8durationSivg",
+                "moduleName": "DailymotionChromecast",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "currentPosition",
+            "printedName": "currentPosition",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21DailymotionChromecast8PlayableV15currentPositionSdvp",
+            "mangledName": "$s21DailymotionChromecast8PlayableV15currentPositionSdvp",
+            "moduleName": "DailymotionChromecast",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21DailymotionChromecast8PlayableV15currentPositionSdvg",
+                "mangledName": "$s21DailymotionChromecast8PlayableV15currentPositionSdvg",
+                "moduleName": "DailymotionChromecast",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21DailymotionChromecast8PlayableV15currentPositionSdvs",
+                "mangledName": "$s21DailymotionChromecast8PlayableV15currentPositionSdvs",
+                "moduleName": "DailymotionChromecast",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21DailymotionChromecast8PlayableV15currentPositionSdvM",
+                "mangledName": "$s21DailymotionChromecast8PlayableV15currentPositionSdvM",
+                "moduleName": "DailymotionChromecast",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "xid",
+            "printedName": "xid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21DailymotionChromecast8PlayableV3xidSSvp",
+            "mangledName": "$s21DailymotionChromecast8PlayableV3xidSSvp",
+            "moduleName": "DailymotionChromecast",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21DailymotionChromecast8PlayableV3xidSSvg",
+                "mangledName": "$s21DailymotionChromecast8PlayableV3xidSSvg",
+                "moduleName": "DailymotionChromecast",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "thumbnailUrl",
+            "printedName": "thumbnailUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21DailymotionChromecast8PlayableV12thumbnailUrl10Foundation3URLVvp",
+            "mangledName": "$s21DailymotionChromecast8PlayableV12thumbnailUrl10Foundation3URLVvp",
+            "moduleName": "DailymotionChromecast",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21DailymotionChromecast8PlayableV12thumbnailUrl10Foundation3URLVvg",
+                "mangledName": "$s21DailymotionChromecast8PlayableV12thumbnailUrl10Foundation3URLVvg",
+                "moduleName": "DailymotionChromecast",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "thumbnailSize",
+            "printedName": "thumbnailSize",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21DailymotionChromecast8PlayableV13thumbnailSizeSo6CGSizeVvp",
+            "mangledName": "$s21DailymotionChromecast8PlayableV13thumbnailSizeSo6CGSizeVvp",
+            "moduleName": "DailymotionChromecast",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGSize",
+                    "printedName": "CoreFoundation.CGSize",
+                    "usr": "c:@S@CGSize"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21DailymotionChromecast8PlayableV13thumbnailSizeSo6CGSizeVvg",
+                "mangledName": "$s21DailymotionChromecast8PlayableV13thumbnailSizeSo6CGSizeVvg",
+                "moduleName": "DailymotionChromecast",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "titile",
+            "printedName": "titile",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21DailymotionChromecast8PlayableV6titileSSvp",
+            "mangledName": "$s21DailymotionChromecast8PlayableV6titileSSvp",
+            "moduleName": "DailymotionChromecast",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21DailymotionChromecast8PlayableV6titileSSvg",
+                "mangledName": "$s21DailymotionChromecast8PlayableV6titileSSvg",
+                "moduleName": "DailymotionChromecast",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "channelName",
+            "printedName": "channelName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21DailymotionChromecast8PlayableV11channelNameSSvp",
+            "mangledName": "$s21DailymotionChromecast8PlayableV11channelNameSSvp",
+            "moduleName": "DailymotionChromecast",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21DailymotionChromecast8PlayableV11channelNameSSvg",
+                "mangledName": "$s21DailymotionChromecast8PlayableV11channelNameSSvg",
+                "moduleName": "DailymotionChromecast",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(chromecastUrl:isLive:isVideo:duration:currentPosition:xid:thumbnailUrl:thumbnailSize:titile:channelName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Playable",
+                "printedName": "DailymotionChromecast.Playable",
+                "usr": "s:21DailymotionChromecast8PlayableV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21DailymotionChromecast8PlayableV13chromecastUrl6isLive0F5Video8duration15currentPosition3xid09thumbnailE00M4Size6titile11channelNameACSS_S2bSiSdSS10Foundation3URLVSo6CGSizeVS2Stcfc",
+            "mangledName": "$s21DailymotionChromecast8PlayableV13chromecastUrl6isLive0F5Video8duration15currentPosition3xid09thumbnailE00M4Size6titile11channelNameACSS_S2bSiSdSS10Foundation3URLVSo6CGSizeVS2Stcfc",
+            "moduleName": "DailymotionChromecast",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Playable",
+                "printedName": "DailymotionChromecast.Playable",
+                "usr": "s:21DailymotionChromecast8PlayableV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21DailymotionChromecast8PlayableV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s21DailymotionChromecast8PlayableV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "DailymotionChromecast",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21DailymotionChromecast8PlayableV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s21DailymotionChromecast8PlayableV6encode2toys7Encoder_p_tKF",
+            "moduleName": "DailymotionChromecast",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:21DailymotionChromecast8PlayableV",
+        "mangledName": "$s21DailymotionChromecast8PlayableV",
+        "moduleName": "DailymotionChromecast",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DailymotionChromecast",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DailymotionChromecast"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DailymotionChromecast",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DailymotionChromecast",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "DailymotionChromecast"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LogLevel",
+        "printedName": "LogLevel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "usr": "s:Su"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21DailymotionChromecast8LogLevelV8rawValueSuvp",
+            "mangledName": "$s21DailymotionChromecast8LogLevelV8rawValueSuvp",
+            "moduleName": "DailymotionChromecast",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt",
+                    "printedName": "Swift.UInt",
+                    "usr": "s:Su"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21DailymotionChromecast8LogLevelV8rawValueSuvg",
+                "mangledName": "$s21DailymotionChromecast8LogLevelV8rawValueSuvg",
+                "moduleName": "DailymotionChromecast",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt",
+                    "printedName": "Swift.UInt",
+                    "usr": "s:Su"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21DailymotionChromecast8LogLevelV8rawValueSuvs",
+                "mangledName": "$s21DailymotionChromecast8LogLevelV8rawValueSuvs",
+                "moduleName": "DailymotionChromecast",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21DailymotionChromecast8LogLevelV8rawValueSuvM",
+                "mangledName": "$s21DailymotionChromecast8LogLevelV8rawValueSuvM",
+                "moduleName": "DailymotionChromecast",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LogLevel",
+                "printedName": "DailymotionChromecast.LogLevel",
+                "usr": "s:21DailymotionChromecast8LogLevelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "usr": "s:Su"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21DailymotionChromecast8LogLevelV8rawValueACSu_tcfc",
+            "mangledName": "$s21DailymotionChromecast8LogLevelV8rawValueACSu_tcfc",
+            "moduleName": "DailymotionChromecast",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:21DailymotionChromecast8LogLevelV",
+        "mangledName": "$s21DailymotionChromecast8LogLevelV",
+        "moduleName": "DailymotionChromecast",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "OptionSet",
+            "printedName": "OptionSet",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "DailymotionChromecast.LogLevel",
+                    "usr": "s:21DailymotionChromecast8LogLevelV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s9OptionSetP",
+            "mangledName": "$ss9OptionSetP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt",
+                    "printedName": "Swift.UInt",
+                    "usr": "s:Su"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SetAlgebra",
+            "printedName": "SetAlgebra",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "DailymotionChromecast.LogLevel",
+                    "usr": "s:21DailymotionChromecast8LogLevelV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s10SetAlgebraP",
+            "mangledName": "$ss10SetAlgebraP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByArrayLiteral",
+            "printedName": "ExpressibleByArrayLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ArrayLiteralElement",
+                "printedName": "ArrayLiteralElement",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "DailymotionChromecast.LogLevel",
+                    "usr": "s:21DailymotionChromecast8LogLevelV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s25ExpressibleByArrayLiteralP",
+            "mangledName": "$ss25ExpressibleByArrayLiteralP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DailymotionChromecast",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DailymotionChromecast"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DailymotionChromecast"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DailymotionChromecast"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "DailymotionChromecast"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "DailymotionChromecast"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerSession.swift",
+      "kind": "BooleanLiteral",
+      "offset": 306,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerSession.swift",
+      "kind": "BooleanLiteral",
+      "offset": 763,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerSession.swift",
+      "kind": "StringLiteral",
+      "offset": 989,
+      "length": 10,
+      "value": "\"E97AF7DE\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerSession.swift",
+      "kind": "StringLiteral",
+      "offset": 1056,
+      "length": 72,
+      "value": "\"com.dailymotion.dailymotion.cast.engines.ChromecastCaster.KEY_PLAYABLE\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerSession.swift",
+      "kind": "FloatLiteral",
+      "offset": 1216,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerSession.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1243,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerSession.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1264,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerSession.swift",
+      "kind": "FloatLiteral",
+      "offset": 1358,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Logs\/DMLog.swift",
+      "kind": "StringLiteral",
+      "offset": 320,
+      "length": 15,
+      "value": "\"HH:mm:ss.SSS \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Logs\/DMLog.swift",
+      "kind": "StringLiteral",
+      "offset": 412,
+      "length": 7,
+      "value": "\"Debug\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Logs\/DMLog.swift",
+      "kind": "StringLiteral",
+      "offset": 451,
+      "length": 6,
+      "value": "\"Info\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Logs\/DMLog.swift",
+      "kind": "StringLiteral",
+      "offset": 490,
+      "length": 13,
+      "value": "\"Error❗️\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Logs\/DMLog.swift",
+      "kind": "StringLiteral",
+      "offset": 538,
+      "length": 9,
+      "value": "\"Default\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Logs\/DMLog.swift",
+      "kind": "StringLiteral",
+      "offset": 575,
+      "length": 17,
+      "value": "\"DMLogChromecast\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Logs\/DMLog.swift",
+      "kind": "StringLiteral",
+      "offset": 622,
+      "length": 10,
+      "value": "\"INTERNAL\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Logs\/DMLog.swift",
+      "kind": "StringLiteral",
+      "offset": 660,
+      "length": 16,
+      "value": "\"%@[%@][%@]: %@\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Logs\/DMLog.swift",
+      "kind": "StringLiteral",
+      "offset": 712,
+      "length": 20,
+      "value": "\"%@[%@][%@][%@]: %@\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Logs\/DMLog.swift",
+      "kind": "StringLiteral",
+      "offset": 888,
+      "length": 38,
+      "value": "\"com.dailymotion.DailymotionPlayerSDK\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Logs\/DMLog.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1471,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Logs\/DMLog.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2470,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Logs\/DMLog.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2772,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Logs\/DMLog.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3078,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerView\/ChromecastPlayerSlider.swift",
+      "kind": "FloatLiteral",
+      "offset": 733,
+      "length": 4,
+      "value": "12.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/DMChromecast.swift",
+      "kind": "BooleanLiteral",
+      "offset": 798,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/DMChromecast.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1240,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/DMChromecast.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6355,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerView\/ChromecastPlayerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 931,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerView\/ChromecastPlayerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1112,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerView\/ChromecastPlayerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1121,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerView\/ChromecastPlayerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1132,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerView\/ChromecastPlayerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1142,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerView\/ChromecastPlayerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1625,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerView\/ChromecastPlayerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1726,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerView\/ChromecastPlayerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1547,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerView\/ChromecastPlayerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1825,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerView\/ChromecastPlayerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1975,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerView\/ChromecastPlayerView.swift",
+      "kind": "StringLiteral",
+      "offset": 2004,
+      "length": 57,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerView\/ChromecastPlayerView.swift",
+      "kind": "StringLiteral",
+      "offset": 2052,
+      "length": 7,
+      "value": "\"--:--\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerView\/ChromecastPlayerView.swift",
+      "kind": "StringLiteral",
+      "offset": 2060,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerView\/ChromecastPlayerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1909,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerView\/ChromecastPlayerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2180,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerView\/ChromecastPlayerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2270,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerView\/ChromecastPlayerView.swift",
+      "kind": "FloatLiteral",
+      "offset": 2359,
+      "length": 3,
+      "value": "0.2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerView\/ChromecastPlayerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2303,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerView\/ChromecastPlayerView.swift",
+      "kind": "StringLiteral",
+      "offset": 2743,
+      "length": 15,
+      "value": "\"Casting to %@\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerView\/ChromecastPlayerView.swift",
+      "kind": "StringLiteral",
+      "offset": 2769,
+      "length": 16,
+      "value": "\"Casting to {x}\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerView\/ChromecastPlayerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2841,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Chromecast\/ChromecastPlayerView\/ChromecastPlayerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3043,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Logs\/LogLevel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 655,
+      "length": 37,
+      "value": "0b00000000000000000000000000000000"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Logs\/LogLevel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 731,
+      "length": 37,
+      "value": "0b00000000000000000000000000000001"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Logs\/LogLevel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 818,
+      "length": 37,
+      "value": "0b00000000000000000000000000000010"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Logs\/LogLevel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 906,
+      "length": 37,
+      "value": "0b00000000000000000000000000000100"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Logs\/LogLevel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 992,
+      "length": 37,
+      "value": "0b11111111111111111111111111111111"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Utils\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 203,
+      "length": 16,
+      "value": "\"Retina-Regular\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Utils\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 260,
+      "length": 15,
+      "value": "\"Retina-Medium\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Utils\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 321,
+      "length": 20,
+      "value": "\"ABCFavorit-Regular\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Utils\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 393,
+      "length": 26,
+      "value": "\"ABCFavorit-RegularItalic\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Utils\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 462,
+      "length": 17,
+      "value": "\"ABCFavorit-Bold\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionChromecast\/DailymotionChromecast\/Sources\/Utils\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 522,
+      "length": 17,
+      "value": "\"DailySans-Bulky\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/DailymotionSDK-audoemehnhmdnrfetitqnaicxrgz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/DailymotionPlayerSDKProd\/IntermediateBuildFilesPath\/DailymotionChromecast.build\/Prod-iphoneos\/DailymotionChromecast.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 761,
+      "length": 26,
+      "value": "\"chromecastExitFullscreen\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/DailymotionSDK-audoemehnhmdnrfetitqnaicxrgz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/DailymotionPlayerSDKProd\/IntermediateBuildFilesPath\/DailymotionChromecast.build\/Prod-iphoneos\/DailymotionChromecast.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 937,
+      "length": 22,
+      "value": "\"chromecastFullscreen\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/DailymotionSDK-audoemehnhmdnrfetitqnaicxrgz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/DailymotionPlayerSDKProd\/IntermediateBuildFilesPath\/DailymotionChromecast.build\/Prod-iphoneos\/DailymotionChromecast.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1097,
+      "length": 16,
+      "value": "\"chromecastMute\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/DailymotionSDK-audoemehnhmdnrfetitqnaicxrgz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/DailymotionPlayerSDKProd\/IntermediateBuildFilesPath\/DailymotionChromecast.build\/Prod-iphoneos\/DailymotionChromecast.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1253,
+      "length": 17,
+      "value": "\"chromecastPause\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/DailymotionSDK-audoemehnhmdnrfetitqnaicxrgz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/DailymotionPlayerSDKProd\/IntermediateBuildFilesPath\/DailymotionChromecast.build\/Prod-iphoneos\/DailymotionChromecast.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1408,
+      "length": 16,
+      "value": "\"chromecastPlay\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/DailymotionSDK-audoemehnhmdnrfetitqnaicxrgz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/DailymotionPlayerSDKProd\/IntermediateBuildFilesPath\/DailymotionChromecast.build\/Prod-iphoneos\/DailymotionChromecast.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1566,
+      "length": 18,
+      "value": "\"chromecastUnMute\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/DailymotionSDK-audoemehnhmdnrfetitqnaicxrgz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/DailymotionPlayerSDKProd\/IntermediateBuildFilesPath\/DailymotionChromecast.build\/Prod-iphoneos\/DailymotionChromecast.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1723,
+      "length": 17,
+      "value": "\"chromecast_icon\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/DailymotionSDK-audoemehnhmdnrfetitqnaicxrgz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/DailymotionPlayerSDKProd\/IntermediateBuildFilesPath\/DailymotionChromecast.build\/Prod-iphoneos\/DailymotionChromecast.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1882,
+      "length": 19,
+      "value": "\"icon_pointer_down\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/DailymotionSDK-audoemehnhmdnrfetitqnaicxrgz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/DailymotionPlayerSDKProd\/IntermediateBuildFilesPath\/DailymotionChromecast.build\/Prod-iphoneos\/DailymotionChromecast.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2028,
+      "length": 11,
+      "value": "\"pause_big\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/DailymotionSDK-audoemehnhmdnrfetitqnaicxrgz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/DailymotionPlayerSDKProd\/IntermediateBuildFilesPath\/DailymotionChromecast.build\/Prod-iphoneos\/DailymotionChromecast.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2164,
+      "length": 10,
+      "value": "\"play_big\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/DailymotionSDK-audoemehnhmdnrfetitqnaicxrgz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/DailymotionPlayerSDKProd\/IntermediateBuildFilesPath\/DailymotionChromecast.build\/Prod-iphoneos\/DailymotionChromecast.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2307,
+      "length": 14,
+      "value": "\"player_pause\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/DailymotionSDK-audoemehnhmdnrfetitqnaicxrgz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/DailymotionPlayerSDKProd\/IntermediateBuildFilesPath\/DailymotionChromecast.build\/Prod-iphoneos\/DailymotionChromecast.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2452,
+      "length": 13,
+      "value": "\"player_play\""
+    }
+  ]
+}
